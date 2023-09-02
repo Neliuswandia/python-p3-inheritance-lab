@@ -7,4 +7,5 @@ import random
 class Teacher(User):
 
     def teach(self):
-        pass
+        random_index = random.randint(0, len(User.knowledge) - 1)
+        return User.knowledge[random_index]
